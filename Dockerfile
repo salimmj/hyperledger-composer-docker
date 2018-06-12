@@ -12,7 +12,8 @@ RUN apt install -y \
 	python \
 	software-properties-common \
 	sudo \
-	telnet
+	telnet \
+	vim
 
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
@@ -43,6 +44,8 @@ RUN export NVM_DIR="$HOME/.nvm" && \
    	npm install -g composer-cli \
    	npm install -g composer-cli \
 	npm install -g composer-rest-server \
-	npm install -g generator-hyperledger-composer
+	npm install -g generator-hyperledger-composer \ 
+	npm install -g composer-playground \
+	npm install -g yo
 
 CMD ["/bin/bash", "-c", "sleep 6000000000000000000"]
