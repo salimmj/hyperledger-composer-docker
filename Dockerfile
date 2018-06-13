@@ -45,7 +45,6 @@ RUN export NVM_DIR="$HOME/.nvm" && \
    	npm install -g composer-cli \
 	npm install -g composer-rest-server \
 	npm install -g generator-hyperledger-composer \ 
-	npm install -g composer-playground \
-	npm install -g yo
+	npm install -g composer-playground
 
 CMD ["/bin/bash", "-c", "sleep 6000000000000000000"]
